@@ -10,4 +10,3 @@ exclude =
     dist,
     venv
 max-complexity = 10
-ignore = D100, D103,
