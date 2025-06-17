@@ -14,13 +14,14 @@ def caching_fibonacci():
     return fibonacci
 
 
-# Отримуємо функцію fibonacci
-fib = caching_fibonacci()
+if __name__ == "__main__":
+    # Отримуємо функцію fibonacci
+    fib = caching_fibonacci()
 
-# Використовуємо функцію fibonacci для обчислення чисел Фібоначчі з використанням кешу
-print(fib(10))      # Виведе 55
-print(fib(15))      # Виведе 610
-print(fib(5))       # Виведе 5
+    # Використовуємо функцію fibonacci для обчислення чисел Фібоначчі з використанням кешу
+    print(fib(10))      # Виведе 55
+    print(fib(15))      # Виведе 610
+    print(fib(5))       # Виведе 5
 
 
 """
