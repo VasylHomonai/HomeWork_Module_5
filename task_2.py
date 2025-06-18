@@ -4,7 +4,7 @@ from typing import Iterator, Callable
 
 def generator_numbers(text: str) -> Iterator[float]:
     # знаходимо числа у форматі x.y
-    pattern = r'(?<=\s)\d+\.\d+(?=\s)'
+    pattern = r'(?<=\s)\d+\.\d+(?=\s)'                              # Патерн від ментора: r' \d+\.\d+ '
     # Знаходемо відразу всі числа в тексті, і почерзі їх віддаємо
     for number in re.findall(pattern, text):
         yield float(number)
